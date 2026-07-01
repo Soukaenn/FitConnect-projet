@@ -13,4 +13,4 @@ Thumbs.db
 *.log
 
 # Données sensibles
-config/local.php
+config/Database.php
