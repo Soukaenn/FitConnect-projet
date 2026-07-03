@@ -14,19 +14,27 @@ architecture en couches (Entities / Repositories / Services / Controllers).
 
 ```
 FitConnect/
+│
 ├── app/
-│   ├── Controllers/     # Orchestration Services + Repositories
-│   ├── Entities/        # Modèles métier encapsulés (Adherent, Abonnement, Seance, Salle, Activite)
-│   ├── Repositories/    # Accès aux données via PDO (requêtes paramétrées)
-│   └── Services/        # Règles de gestion, indépendantes de la persistance
+│
 ├── config/
-│   └── Database.php     # Connexion PDO centralisée (singleton)
+│   └── Database.php
+│
 ├── database/
-│   └── fitconnect.sql   # Script de structure + jeu de données de test
+│   └── fitconnect.sql
+│
 ├── public/
-│   ├── index.php        # Point d'entrée unique (routeur simple)
-│   └── test.php         # Tests rapides des couches Entités/Repositories/Services
-└── views/                # Vues HTML/PHP (adherents, abonnements, seances, dashboard)
+│
+├── views/
+│   ├── adherents/
+│   ├── abonnements/
+│   ├── seances/
+│   ├── dashboard/
+│   └── layouts/
+│
+├── .gitignore
+└── README.md
+```
 ```
 
 ## Installation
